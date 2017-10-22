@@ -1,0 +1,14 @@
+<link rel="stylesheet" href="./birthdayInput/birthdayInput.css">
+<section class="input-section panel-body">
+    <form name="bi.birthdayForm" ng-submit="bi.saveForm()">
+        <label class="pull-left">Name: </label>
+        <input class="form-control" type="text" name="name" ng-model="bi.formValue.name" required />
+
+        <label class="pull-left">Birthday: </label>
+        <input class="form-control" type="text" pattern="(0[1-9]|1[0-9]|2[0-9]|3[01])-(0[1-9]|1[012])-[0-9]{4}"
+               ng-model="bi.formValue.date" placeholder="dd-mm-yyyy" required />
+
+        <a href="#/" class="btn btn-info">Birthday Month</a>
+        <input type="submit" class="btn btn-primary" value="Save" ng-disabled="!bi.birthdayForm.$valid" />
+    </form>
+</section>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+        <title>Birthday App</title>
+
+        <!--inject libs-->
+        <link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+        <script src="../node_modules/angular/angular.min.js"></script>
+        <script src="../node_modules/angular-route/angular-route.min.js"></script>
+        <!--end inject-->
+
+    </head>
+    <body ng-app="birthdayApp">
+        <div ng-include="'topNav/topNav.html'" ng-controller="topNavCtrl as tn"></div>
+        <ng-view></ng-view>
+
+    <!-- Bootstrapping -->
+    <script src="app.module.js"></script>
+
+    <!--core module-->
+    <script src="services/shareDataService.js"></script>
+
+    <!--top navigation-->
+    <script src="topNav/topNav.module.js"></script>
+    <script src="topNav/topNav.controller.js"></script>
+
+    <!--birthday month-->
+    <script src="birthdayMonth/birthdayMonth.module.js"></script>
+    <script src="birthdayMonth/config.route.js"></script>
+    <script src="birthdayMonth/birthdayMonth.controller.js"></script>
+
+    <!--birthday input-->
+    <script src="birthdayInput/birthdayInput.module.js"></script>
+    <script src="birthdayInput/config.route.js"></script>
+    <script src="birthdayInput/birthdayInput.controller.js"></script>
+    <!--end inject-->
+
+    </body>
+</html>

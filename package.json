@@ -1,0 +1,24 @@
+{
+  "name": "birthday_ui",
+  "version": "1.0.0",
+  "description": "programming task for TDA",
+  "main": "",
+  "scripts": {
+    "start": "light-server -s . -b localhost -p 3000",
+    "test": "node ./node_modules/karma/bin/karma start karma.config.js"
+  },
+  "author": "Melody Long",
+  "license": "ISC",
+  "devDependencies": {
+    "angular": "1.5.9",
+    "angular-mocks": "1.5.9",
+    "angular-route": "1.5.9",
+    "bootstrap": "^3.3.7",
+    "jasmine-core": "^2.8.0",
+    "karma": "^1.7.1",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-jasmine": "^1.1.0",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "light-server": "^2.2.1"
+  }
+}

@@ -1,0 +1,21 @@
+.month-section {
+    text-align: center;
+}
+
+.sort-block button {
+    margin: 0 0 10px;
+}
+
+.month-block {
+    width: 270px;
+    min-height: 70px;
+    border: 1px solid #d7dcdf;
+    margin: 5px auto;
+    padding-top: 10px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.button-block {
+    margin: 20px 0 30px;
+}

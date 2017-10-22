@@ -1,0 +1,18 @@
+<link rel="stylesheet" href="birthdayMonth/birthdayMonth.css">
+<section class="month-section panel-body">
+    <div class="sort-block pull-left" ng-if="bm.months.length">
+        <div>
+            <button class="btn btn-primary" ng-click="bm.sortByChronological()">Sort Chronological Order</button>
+        </div>
+        <div>
+            <button class="btn btn-primary" ng-click="bm.sortByNumerical()">Sort Numerical Order</button>
+        </div>
+    </div>
+    <div class="month-block" ng-repeat="month in bm.months | orderBy: bm.content: bm.isReverse">
+        <b>{{month.name}}</b>
+        <div>{{month.count}}</div>
+    </div>
+    <div class="button-block">
+        <a class="btn btn-info" href="#/birthdayInput">Enter Birthday</a>
+    </div>
+</section>
